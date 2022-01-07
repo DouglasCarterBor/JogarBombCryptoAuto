@@ -7,21 +7,22 @@ def iniciar_bomb():
     pyautogui.alert("Pressione Ok nesta mensagem e depois não toque no mouse ou no teclado! Obrigado!")
     # 02 - ABRIR O GOOGLE CHROME
     pyautogui.press('winleft')
-    time.sleep(0.3)
+    time.sleep(0.5)
     pyautogui.write('chrome')
+    time.sleep(0.5)
     pyautogui.press('enter')
     # 03 - ACESSAR O BOMB
-    time.sleep(0.3)
+    time.sleep(0.5)
     pyautogui.write('https://app.bombcrypto.io/')
     pyautogui.press('enter')
     pyautogui.press('f11')
     # 04 - CLICAR EM CONECTAR CARTEIRA
-    time.sleep(8)
+    time.sleep(10)
     pyautogui.moveTo(954, 668)
     time.sleep(0.1)
     pyautogui.click()
     # 05 - ASSINAR
-    time.sleep(8)
+    time.sleep(10)
     pyautogui.moveTo(1782, 696)
     pyautogui.click()
     # 06 - CLICAR EM CAÇA TESOURO
@@ -42,7 +43,7 @@ def iniciar_bomb():
         pyautogui.moveTo(949, 762)
         pyautogui.click()
         # 09 - COLOCAR HERÓIS PARA TRABALHAR
-        time.sleep(1)
+        time.sleep(10)
         pyautogui.moveTo(848, 271)
         pyautogui.click()
         # 10 - FECHAR
@@ -54,24 +55,22 @@ def iniciar_bomb():
         pyautogui.moveTo(950, 679)
         pyautogui.click()
         # 12 - ESPERAR O TRABALHO
-        time.sleep(500)
-        while x == 6 or x == 13 or x == 20 or x == 30 or x == 40 or x == 50:
-            x += 1
+        time.sleep(580) # 580 = 9 M e 40 S
+        while x == 6:
+            x -= 6
             # 01 - ATUALIZAR A PÁGINA
             pyautogui.hotkey('crtl', 'f5')
-            time.sleep(8)
             # 02 - CLICAR EM CONECTAR CARTEIRA
-            time.sleep(8)
-            pyautogui.moveTo(990, 789)
-            time.sleep(0.1)
+            time.sleep(10)
+            pyautogui.moveTo(954, 668)
             pyautogui.click()
             # 03 - ASSINAR
-            time.sleep(5)
-            pyautogui.moveTo(1806, 696)
+            time.sleep(10)
+            pyautogui.moveTo(1782, 696)
             pyautogui.click()
             # 04 - CLICAR EM CAÇA TESOURO
-            time.sleep(12)
-            pyautogui.moveTo(981, 552)
+            time.sleep(20)
+            pyautogui.moveTo(959, 446)
             pyautogui.click()
 
     #pyautogui.alert("O código acabou de rodar, pode utilizar seu computador de novo!")
