@@ -17,7 +17,7 @@ def iniciar_bomb():
     pyautogui.press('enter')
     pyautogui.press('f11')
     # 04 - CLICAR EM CONECTAR CARTEIRA
-    time.sleep(10)
+    time.sleep(20)
     pyautogui.moveTo(954, 668)
     time.sleep(0.1)
     pyautogui.click()
