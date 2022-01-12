@@ -12,7 +12,7 @@ tempocolocarheroisparatrabalhar = 10 #10
 tempocolocarheroiparatrabalhar = 10 #10
 tempoclicaremfecharherois = 0.1 #0.1
 tempobaixaraba = 1 #1
-tempoesperarotrabalho = 500 #580
+tempoesperarotrabalho = 490 #580
 tempodearrasto = 0.4
 
 def iniciar_bomb_ind():
