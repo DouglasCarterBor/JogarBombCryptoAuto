@@ -5,6 +5,7 @@ import jogar_bomb
 from jogar_bomb import iniciar_bomb
 import jogar_bomb_personagens_individuais
 from jogar_bomb_personagens_individuais import iniciar_bomb_ind
+from colocar_todos_para_trabalhar import iniciar_bomb_todos
 
 
 
@@ -20,4 +21,6 @@ botao = Button(janela, text="Iniciar Bomb Ind", command=iniciar_bomb_ind)
 botao.grid(column=0, row=2, padx=10, ipady=10)
 botao = Button(janela, text="Finalizar Bomb", command=jogar_bomb.finalizar_bomb)
 botao.grid(column=0, row=3, padx=10, ipady=10)
+botao = Button(janela, text="Iniciar Bomb Todos", command=iniciar_bomb_todos)
+botao.grid(column=0, row=4, padx=10, ipady=10)
 janela.mainloop()
