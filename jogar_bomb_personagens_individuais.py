@@ -123,6 +123,8 @@ def iniciar_bomb_ind():
             # FIM DO ARRASTE
             pyautogui.moveTo(846, 682, tempodearrasto)
             pyautogui.click()
+            pyautogui.moveTo(848, 269, tempodearrasto)
+            pyautogui.click()
             a -= 15
         # 10 - FECHAR
         time.sleep(tempoclicaremfecharherois)
